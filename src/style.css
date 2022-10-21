@@ -1,1 +1,83 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+
+.header {
+  color: yellow;
+  margin-bottom: 35px;
+  font-size: 56px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.symbol {
+  font-size: 56px;
+  padding: 0px;
+  margin: 0px;
+  color: blue;
+}
+
+.number {
+  font-size: 88px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+}
+
+#bottom {
+  transform: rotate(180deg);
+  align-self: flex-end;
+  justify-self: baseline;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  width: 210px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px;
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 5px;
+}
+.hearts::after {
+  color: red;
+  content: "♥";
+}
+
+.spades::after {
+  color: black;
+  content: "♠";
+}
+
+.clubs::after {
+  color: black;
+  content: "♣";
+}
+
+.diamonds::after {
+  color: red;
+  content: "♦";
+}
+
+.btn {
+  background-color: white;
+  margin-top: 100px;
+  text-align: center;
+  transition-duration: 1s;
+}
+
+.btn:active {
+  transform: scale(120%);
+  transition-property: transform;
+  transition-duration: 0.1s;
+}
